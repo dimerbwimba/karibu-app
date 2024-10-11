@@ -1,0 +1,462 @@
+@tailwind base;
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+html,
+body {
+
+}
+/* utilities */
+.anchor{
+    @apply underline font-bold cursor-pointer text-blue-800
+}
+.red{
+    @apply text-red-700
+}
+.lock{
+    @apply opacity-55 cursor-not-allowed 
+}
+.alert{
+    @apply mb-5 border p-2 rounded-md bg-red-200 flex space-x-2 items-center
+}
+.success{
+    @apply mb-5 border p-2 rounded-md bg-green-100
+}
+.info{
+     @apply mb-5 border p-2 rounded-md bg-yellow-100
+}
+.info-simple{
+    @apply flex justify-center items-center space-x-2
+}
+.list{
+    @apply p-5
+}
+.close-icon{
+    @apply invisible
+}
+.list ul > li:hover .close-icon{
+    @apply text-red-700 visible
+}
+.list ul > li{
+     @apply border-b  cursor-pointer hover:bg-slate-100 px-5 flex items-center justify-between space-x-3 py-1
+}
+.list ul > li .logo{
+    @apply border p-2 rounded-full
+}
+.list ul > li .logo{
+    @apply border p-2 rounded-full
+}
+
+.table-simple {
+    @apply table w-full bg-white border-collapse
+}
+.spacer{
+    @apply py-6
+}
+.spacer-sm{
+    @apply py-2
+}
+.spacer-md{
+    @apply py-3
+}
+.bold {
+    @apply font-bold
+}
+.error{
+    @apply text-red-700
+}
+.welcome-title{
+    @apply text-[23px] pt-2 pb-6 font-bold
+}
+.btn-blue {
+    @apply px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-600;
+}
+
+/* Container */
+.container {
+    @apply  flex flex-col  items-center w-full
+}
+
+/* Clickable card Container */
+.card {
+    @apply border h-48 w-48 items-center justify-center flex flex-col font-bold rounded-lg cursor-pointer shadow-sm hover:bg-gray-100 ease-in-out duration-500 transition text-center
+}
+.card .icon-text{
+    @apply flex flex-col justify-center items-center text-green-700
+}
+
+.welcome{
+    @apply  h-screen overflow-hidden flex
+}
+.left-marketing{
+    @apply bg-gray-100 flex flex-col  w-1/2  h-full justify-center items-center
+}
+.right-marketing{
+    @apply flex flex-col  w-1/2  items-center py-20
+}
+.right-marketing .login-register-button {
+    @apply w-full flex justify-between
+}
+.right-marketing .login-form{
+    @apply overflow-y-auto w-full px-10 lg:px-40 h-screen
+}
+.right-marketing .register-form{
+    @apply overflow-y-auto w-full px-10 lg:px-40 h-screen
+}
+.login.active{
+    @apply opacity-80
+}
+
+.or-login-divider{
+    @apply flex justify-center items-center font-bold py-2
+}
+
+.login-register-button .button{
+    @apply w-1/2 font-bold text-gray-600  flex justify-center items-center space-x-3 py-1 border-b
+}
+.welcome-marketing-h1{
+    @apply flex items-center justify-center text-center w-full text-xl font-bold bg-red-700 text-white
+}
+.terms-and-condition{
+    @apply flex space-x-2 font-bold border px-2 py-1 rounded-md text-sm
+}
+
+/* Navigation bar */
+.nav {
+    @apply flex space-x-4 mx-2 py-2 fixed w-full border-b bg-white  z-50
+}
+/* Navigation next & prev */
+.nav .next-btn {
+    @apply border rounded-md px-2 text-lg font-bold hover:bg-gray-100 ease-in-out duration-500 transition
+}
+.nav .prev-btn {
+    @apply border rounded-md px-2 text-lg font-bold hover:bg-gray-100 ease-in-out duration-500 transition
+}
+
+/* Menu card */
+.menu-text{
+    @apply font-bold
+}
+
+/* Input Form Prev and Next */
+.form {
+    @apply w-full w-1/2
+
+}
+.select{
+    @apply w-full border rounded-md py-1 px-2 mt-2
+}
+.input-text {
+    @apply border w-full rounded-md px-2 py-1
+}
+.lable{
+    @apply font-bold
+}
+
+.ajouter-inscription-divider-container{
+    @apply p-10 flex flex-col justify-center items-center mb-10 w-full
+}
+
+.ajouter-inscription-divider{
+    @apply   flex justify-center
+}
+.ajouter-btns-containers{
+    @apply flex w-full justify-center border-t space-x-3 mt-4 pt-2  fixed bottom-0 left-0 bg-white
+}
+
+.ajouter-inscription-btns{
+    @apply flex justify-between px-10 space-x-3  justify-center pb-3 w-full
+}
+.ajouter-reception-divider{
+    @apply flex
+}
+
+
+.preview-form{
+    @apply w-1/2 px-2 py-2 border-r space-y-2
+}
+.form-section{
+    @apply w-1/2 px-2 space-y-2 py-2
+}
+.preview-form-title{
+    @apply font-bold text-center pb-5 border-b
+}
+.preview-list{
+    @apply space-y-1
+}
+.preview-photo{
+    @apply h-32 w-32 border flex justify-center text-center items-center rounded-md
+}
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */
+.tab-pointer{
+    @apply animate-bounce absolute -top-4 
+}
+.btn-green{
+    @apply bg-green-600 hover:bg-green-700 hover:text-gray-200 text-white font-bold
+}
+.btn-add{
+    @apply bg-yellow-800 text-white font-bold
+}
+.btn-imprimer{
+    @apply border border-red-600
+}
+.btn-restart{
+    @apply bg-green-700 text-white border
+}
+.mt4{
+    @apply mt-4
+}
+.btn{
+    @apply flex justify-center items-center py-2 space-x-2 
+}
+.btn-small{
+    @apply px-5 rounded-md p-1
+}
+.btn-full{
+    @apply px-10 w-full rounded-md p-1
+}
+.btn-span-small{
+    @apply text-sm px-2
+}
+.btn-span-danger{
+    @apply  bg-red-700 text-white rounded-md 
+}
+.btn-span-warning{
+    @apply bg-yellow-400 text-stone-800 rounded-md
+}
+.btn-span-success{
+    @apply  bg-green-700 text-white rounded-md 
+}
+
+
+/* List candidat brenda */
+.list-candidat-brenda{
+    @apply flex justify-center 
+}
+.list-candidat-brenda-container{
+    @apply   mx-20
+}
+.list-candidat-brenda-preview{
+    @apply border-b
+}
+.list-candidat-brenda-single{
+    @apply w-1/2 px-2
+}
+.recherce-candidat{
+    @apply px-2 space-y-2
+}
+.list-candidat-container-brenda{
+    @apply border-b
+}
+.list-candidat-container-brenda-ul{
+    @apply flex  font-normal hover:bg-gray-100 cursor-pointer
+}
+
+/* gestion du site */
+.gestion-site-inner-card{
+    @apply grid grid-cols-2 gap-4
+}
+
+/* main layout sidebar and main*/
+.layout-main{
+    @apply flex
+}
+.left-nav{
+    @apply w-[25%]  z-[999999]
+}
+
+.sidebar-item{
+    @apply pl-5 border-b w-full border-gray-50 cursor-pointer font-semibold hover:bg-gray-100 py-1 text-[18px]
+}
+.sidebar-item .icon{
+    @apply text-red-700
+}
+.side-bar-container .sidebar-item-logo{
+    @apply bg-gray-50 p-16
+}
+
+.side-bar-container .sidebar-item{
+    @apply  px-2 border-b w-full border-gray-50 cursor-pointer font-semibold hover:bg-gray-100 py-1 text-[17px]
+}
+.sidebar-item .link{
+    @apply w-full flex  items-center space-x-2
+}
+.bg{
+    @apply h-full
+}
+
+/* side menu bottom section */
+.side-menu-bottom-container-item-licenced-version {
+    @apply px-2 border-t mt-4 font-thin
+}
+
+/* view update inbox */
+.inbox-container {
+    @apply flex h-full w-full
+}
+.inbox-container-list {
+    @apply flex w-full
+}
+.inboxs-list {
+    @apply w-1/2 border-r
+}
+.inbox-list-title{
+    @apply text-center font-bold pt-4
+}
+.read-non-read{
+    @apply flex justify-between
+}
+.read-non-read .msg{
+    @apply text-center  w-1/2 border-r border-b cursor-pointer py-1
+}
+.active{
+    @apply  bg-slate-100 w-full
+}
+.read-non-read .non-read{
+    @apply text-center  w-1/2 cursor-pointer
+}
+.search-inbox-list{
+    @apply px-2 border-b py-2
+}
+.inboxes-list-item{
+    @apply px-3 border-b py-2 text-lg hover:bg-slate-100 ease-in-out transition duration-500 cursor-pointer leading-4
+}
+.inboxes-list-item p{
+    @apply text-sm text-slate-600
+}
+.inboxs-preview-nav{
+    @apply flex justify-between w-full border-b border-gray-50 shadow-sm
+}
+.inboxs-preview{
+    @apply w-full
+}
+.inboxs-preview-nav .left{
+    @apply w-1/2 px-5 h-full
+}
+.inboxs-preview-nav .right{
+    @apply w-1/2 px-5 h-full
+}
+.inboxs-preview-nav .left .boxe{
+    @apply flex space-x-2 py-3
+}
+.inboxs-preview-nav .left .boxe .delete{
+    @apply bg-red-800 text-white px-2 rounded-md cursor-pointer
+}
+.inboxs-preview-nav .left .boxe .forward{
+    @apply bg-slate-800 text-white px-2 rounded-md cursor-pointer
+}
+.inboxs-preview-nav .left .boxe .save{
+    @apply bg-green-800 text-white px-2 rounded-md cursor-pointer
+}
+.inboxs-preview-nav .right .sender-info{
+    @apply w-full flex py-2
+}
+.inboxs-preview-nav .right .sender-info .info {
+    @apply leading-4 flex justify-end flex-col w-full text-end
+}
+.inboxs-preview-nav .right .sender-info .info .date{
+    @apply text-[14px]
+}
+.inboxs-preview-nav .right .sender-info .info .email{
+    @apply font-bold
+}
+
+/* lists de tous les agents */
+
+.agents-container{
+    @apply h-full w-full p-5
+}
+.sidebar-item .site{
+    @apply line-clamp-1
+}
+
+/* steps after new login */
+
+.AfterAuthQuestions{
+    @apply flex justify-center items-center h-full  py-10
+}
+.type-of-company{
+    @apply grid grid-cols-2 gap-4
+}
+.type-of-tools{
+    @apply  grid grid-cols-2 gap-4
+}
+.steps{
+    @apply relative 
+}
+.steps-1-input{
+    @apply flex items-center justify-center space-x-3
+}
+/*modals*/
+.modal-overlay {
+    @apply fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50;
+  }
+  
+  .modal-container {
+    @apply bg-white rounded-lg shadow-lg max-w-lg w-full relative;
+  }
+  
+  .modal-header {
+    @apply p-4;
+  }
+  
+  .modal-title {
+    @apply text-lg text-center border rounded-md py-2 font-semibold;
+  }
+  
+  .modal-close-btn {
+    @apply absolute top-3 right-3 text-gray-500 hover:text-gray-700;
+  }
+  
+  .modal-body {
+    @apply p-4;
+  }
+  
+  .modal-footer {
+    @apply   border absolute -top-6 left-1 bg-slate-700 rounded-full p-1 text-white ;
+  }
+
+  /*page de messagerie*/
+
+.message-container{
+    @apply  w-full max-w-3xl h-screen flex justify-between flex-col
+}
+.message-container .message-form{
+    @apply  fixed bottom-0 bg-white right-48 p-3 w-1/2
+}
+.message-form-container{
+    @apply  w-full relative
+}
+.textarea{
+    @apply rounded-lg pl-10 pr-10 py-2 w-full border-b-2 border-slate-900
+}
+.message-form-container .send{
+    @apply absolute right-3 top-1   rounded-full p-1 text-white cursor-pointer
+}
+
+.message-form-container .file{
+    @apply absolute left-3 top-2 bg-gray-500 rounded-full p-1 text-white cursor-pointer
+}
+
+.message-body{
+    @apply h-screen px-20 flex flex-col-reverse 
+}
+.messages{
+    width: fit-content ;
+}
+
+.message-spacer{
+    @apply h-24
+}
+.messages-container .messages{
+    @apply bg-gray-200 p-1 rounded-lg
+}
+.messages-container .author{
+    @apply px-2 text-sm font-bold
+}
